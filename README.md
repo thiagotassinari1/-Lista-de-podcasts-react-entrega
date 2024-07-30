@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Podcast List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação React simples para gerenciar uma lista de podcasts que você deseja ouvir. A aplicação permite adicionar, editar e excluir podcasts da lista.
 
-## Available Scripts
+## Estrutura de Arquivos
 
-In the project directory, you can run:
+A estrutura dos arquivos no diretório `src` é a seguinte:
 
-### `npm start`
+src/
+│
+├── components/
+│ ├── PodcastItem.jsx
+│ └── PodcastList.jsx
+│
+├── App.css
+├── App.js
+├── index.css
+└── index.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **components**: Contém os componentes React utilizados na aplicação.
+- **App.css**: Contém os estilos globais da aplicação.
+- **App.js**: Componente principal da aplicação.
+- **index.css**: Estilos adicionais para a aplicação.
+- **index.js**: Ponto de entrada da aplicação React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação do React
 
-### `npm test`
+Para criar e executar o projeto, é necessário ter o Node.js instalado. Utilizando os comandos abaixo para iniciar a aplicação:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Instalar a aplicação**:
+   ```
+   npx create-react-app NOME-PROJETO
+   ```
+2. **Inicie o servidor de desenvolvimento**:
+   ```
+   npm start
+   ```
+Isso iniciará o servidor de desenvolvimento, e a aplicação estará disponível em `http://localhost:3000`.
 
-### `npm run build`
+## Tema
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O tema da aplicação é uma lista de podcasts para ouvir. Os usuários podem adicionar novos podcasts, editar os existentes ou removê-los da lista.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Componentes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### PodcastItem.jsx
 
-### `npm run eject`
+Este componente representa um item individual na lista de podcasts. Ele possui duas versões de visualização: uma para exibição e outra para edição. As principais funcionalidades incluem:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Exibição de Podcast**: Mostra o nome do podcast com botões para editar ou excluir.
+- **Edição de Podcast**: Permite ao usuário alterar o nome do podcast e salvar ou cancelar as mudanças.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### PodcastList.jsx
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este é o componente principal que gerencia a lista de podcasts. Ele utiliza hooks do React como `useState` e `useCallback` para gerenciar o estado e otimizar a performance da aplicação. As principais funcionalidades incluem:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Adicionar Podcast**: Permite ao usuário adicionar um novo podcast à lista.
+- **Excluir Podcast**: Remove um podcast da lista.
+- **Editar Podcast**: Inicia o modo de edição para um podcast selecionado e salva ou cancela as alterações.
 
-## Learn More
+## Tecnologias Utilizadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **CSS**: Estilização da aplicação.
