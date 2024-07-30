@@ -5,7 +5,7 @@ Este projeto é uma aplicação React simples para gerenciar uma lista de podcas
 ## Estrutura de Arquivos
 
 A estrutura dos arquivos no diretório `src` é a seguinte:
-
+```
 src/
 │
 ├── components/
@@ -16,7 +16,7 @@ src/
 ├── App.js
 ├── index.css
 └── index.js
-
+```
 - **components**: Contém os componentes React utilizados na aplicação.
 - **App.css**: Contém os estilos globais da aplicação.
 - **App.js**: Componente principal da aplicação.
